@@ -82,3 +82,4 @@ console.log(p2.fala(`falando sobre JS`));
 Getter > get imc() > faz com que minha função se torne atributo
 Setter > set nomeCompleto() > Receber 
 //this sempre se refere a quem chamou, quem chamou foi "p2"*/
+
