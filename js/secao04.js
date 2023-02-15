@@ -106,3 +106,15 @@ function Pessoa(nome, sobrenome) {
   const p2 = new Pessoa('Maria', 'Oliveira');
   p1.metodo();
   p2.metodo();*/
+
+/*AULA - Funções recursivas
+//Função que se chama de volta
+  function recursiva(max) {
+    console.log(max); //Limite para quando a função vai parar
+    if (max >= 10) return;
+    max++; //incremento 
+    recursiva(max);
+  }
+  
+  recursiva(0);*/
+
