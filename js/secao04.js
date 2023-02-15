@@ -43,6 +43,7 @@ usaFalaNome();*/
 
 /*AULA - Funções imediatas (IIFE)
 Fazer com que as variáveis e funções venham a fugir do escopo global
+
 (function(idade, peso, altura) {
     
     const sobrenome = "Miranda";
@@ -58,3 +59,26 @@ Fazer com que as variáveis e funções venham a fugir do escopo global
     console.log(idade, peso, altura);
 
 })(30, 80, 1.80);*/
+
+/*AULA - Funções fábrica (Factory Functions)//
+Criar uma função que facilita quando eu executar ela, principalmente usando "this"
+
+function criaPessoa(nome, sobrenome) {
+    return {
+        nome,
+        sobrenome,
+        fala: function(assunto) {
+            return `${this.nome} está ${assunto}.`;
+        }
+    };
+}
+
+
+const p1 = criaPessoa("Luiz", "Otávio");
+const p2 = criaPessoa("Maria", "Joaquina");
+console.log(p2.fala(`falando sobre JS`));
+
+
+Getter > get imc() > faz com que minha função se torne atributo
+Setter > set nomeCompleto() > Receber 
+//this sempre se refere a quem chamou, quem chamou foi "p2"*/
