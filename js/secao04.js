@@ -84,7 +84,7 @@ Getter > get imc() > faz com que minha função se torne atributo
 Setter > set nomeCompleto() > Receber 
 //this sempre se refere a quem chamou, quem chamou foi "p2"*/
 
-//AULA - Funções construtoras (constructor functions)
+/*AULA - Funções construtoras (constructor functions)
 //Retorna o objeto
 //Construtora -> Pessoa (new)
 //Inicia o nome da função construtora com letra Maiuscula
@@ -105,4 +105,4 @@ function Pessoa(nome, sobrenome) {
   const p1 = new Pessoa('Luiz', 'Otávio');//precisa inserir o "new"
   const p2 = new Pessoa('Maria', 'Oliveira');
   p1.metodo();
-  p2.metodo();
+  p2.metodo();*/
