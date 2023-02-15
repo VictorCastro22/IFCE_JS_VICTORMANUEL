@@ -62,6 +62,7 @@ Fazer com que as variáveis e funções venham a fugir do escopo global
 
 /*AULA - Funções fábrica (Factory Functions)//
 Criar uma função que facilita quando eu executar ela, principalmente usando "this"
+Cria objeto
 
 function criaPessoa(nome, sobrenome) {
     return {
@@ -83,3 +84,25 @@ Getter > get imc() > faz com que minha função se torne atributo
 Setter > set nomeCompleto() > Receber 
 //this sempre se refere a quem chamou, quem chamou foi "p2"*/
 
+//AULA - Funções construtoras (constructor functions)
+//Retorna o objeto
+//Construtora -> Pessoa (new)
+//Inicia o nome da função construtora com letra Maiuscula
+function Pessoa(nome, sobrenome) {
+    // Atributos ou métodos privados
+    // const ID = 123456;
+    // const metodoInterno = function() {};
+  
+    // Atributos ou métodos públicos
+    this.nome = nome;
+    this.sobrenome = sobrenome;
+  
+    this.metodo = function() {
+      console.log(this.nome + ': sou um método');
+    };
+  }
+  //"new" cria um objeto vazio, faz o "this" apontar para o objeto
+  const p1 = new Pessoa('Luiz', 'Otávio');//precisa inserir o "new"
+  const p2 = new Pessoa('Maria', 'Oliveira');
+  p1.metodo();
+  p2.metodo();
