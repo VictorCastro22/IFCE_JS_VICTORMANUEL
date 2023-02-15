@@ -37,4 +37,6 @@ function usaFalaNome() { //O resultado será "Luiz" ainda
 }
 usaFalaNome();*/
 
-/*AULA -  Closures > Habilidade de acessar o escopo léxico*/
+//AULA -  Closures > Habilidade de acessar o escopo léxico
+
+//AULA - Funções de callback > Ordenar a maneira que as funções serão executadas
