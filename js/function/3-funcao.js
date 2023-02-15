@@ -36,3 +36,5 @@ function usaFalaNome() { //O resultado será "Luiz" ainda
     falaNome();
 }
 usaFalaNome();*/
+
+/*AULA -  Closures > Habilidade de acessar o escopo léxico*/
