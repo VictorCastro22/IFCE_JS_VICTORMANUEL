@@ -118,7 +118,7 @@ function Pessoa(nome, sobrenome) {
   
   recursiva(0); */
 
-  /*AULA - Funções geradoras*/
+  /*AULA - Funções geradoras
   //Não entregam tudo de uma vez, vão por partes
   function* geradora1() {
     // Código qualquer ...
@@ -176,4 +176,4 @@ function Pessoa(nome, sobrenome) {
   
   func1();
   func2();
-  func3();
+  func3();*/
