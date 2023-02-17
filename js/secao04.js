@@ -1,3 +1,4 @@
+//**Seção finalizada**
 /*AULA - Retorno da função
 function falaFrase (comeco) {
     function falaResto (resto) {
