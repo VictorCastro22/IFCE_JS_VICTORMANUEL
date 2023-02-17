@@ -33,3 +33,14 @@ console.log(nomes);
 
 // shift
 // const removidos = nomes.splice(0, 1);*/
+
+/*AULA -  Concatenando arrays
+
+const a1 = [1, 2, 3];
+const a2 = [4, 5, 6];
+const a3 = a1.concat(a2, [7, 8, 9], 'Luiz');
+// Pega o a1, a2, adiciona os números e "Luiz" e manda para a3
+// ... rest -> ... spread (Rest operation é bem importante)
+// const a3 = [...a1, 'Luiz', ...a2, ...[7, 8, 9]];
+console.log(a1, a2);
+console.log(a3); */
