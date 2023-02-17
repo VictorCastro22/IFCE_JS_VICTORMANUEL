@@ -1,3 +1,4 @@
+//**Seção finalizada**
 /*AULA - Revisão do básico em Arrays
 //                 0         1        2        3          4
 // const nomes = ['Eduardo', 'Maria', 'Joana', 'Wallace', 'Rosana'];
