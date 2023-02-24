@@ -1,5 +1,10 @@
 body{
-    background-image: linear-gradient(to right, rgb(20, 220, 63), rgb(17, 71, 51));
+    background-image: linear-gradient(to right, rgb(20, 220, 63), rgb(13, 54, 39));
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        justify-content: center;
+        align-items: center;
 }
 
 h1{
@@ -7,9 +12,15 @@ h1{
     font-size: 50px;
 }
 
+hr{
+    font-weight: bold;
+    height: 0.188rem;
+    background: black;
+    margin-bottom: 0.625rem;
+}
+
 .container{
     text-align: center;
-    padding: 9.375rem;
 }
 
 .stage{
@@ -52,4 +63,24 @@ h1{
     bottom: 0;
     left: 0;
     right : 0;
+}
+
+@media (max-width: 320px) {
+    body {                
+        font-size: 75%;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to right, rgb(20, 220, 63), rgb(17, 71, 51));
+        width: 6.25rem;
+        height: 6.25rem; 
+    }
+
+    .square {
+    width: 6.25rem;
+    height: 6.25rem; 
+    background-color: bisque;
+    border: 0.063rem  solid black;
+    display: inline-block;
+
+    }
+
 }

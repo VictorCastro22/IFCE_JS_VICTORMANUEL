@@ -14,7 +14,6 @@ let winStates = [
     [2,4,6]
 ]
 
-
 function movimento (position) { //Pega a posição passada.
 
     if (gameOver){

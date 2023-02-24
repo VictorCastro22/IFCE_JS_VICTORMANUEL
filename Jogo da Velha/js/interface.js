@@ -1,4 +1,6 @@
+
 document.addEventListener("DOMContentLoaded", () => { //Executa ao documento ser carregado.
+
 
     let squares = document.querySelectorAll(".square"); //Pega todos os squares do HTML.
 
@@ -15,7 +17,7 @@ function click (event) {
     if (movimento(postion)) {
 
         setTimeout(() => { //Travar um tempo para aparecer a última mensagem.
-            alert("O jogo acabou, o vencedor foi: " + playerTime);
+            alert("O jogo acabou! O vencedor foi o jogador " + playerTime);
         }, 10);
 
     }; //Passo a posição para a outra função.
