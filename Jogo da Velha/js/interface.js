@@ -12,7 +12,13 @@ function click (event) {
     let square = event.target; //Elemento que recebe o evento.
     let postion = square.id; //Pego o id do elemento.
 
-    movimento(postion); //Passo a posição para a outra função.
+    if (movimento(postion)) {
+
+        setTimeout(() => { //Travar um tempo para aparecer a última mensagem.
+            alert("O jogo acabou, o vencedor foi: " + playerTime);
+        }, 10);
+
+    }; //Passo a posição para a outra função.
     upSquares();
 
 }
