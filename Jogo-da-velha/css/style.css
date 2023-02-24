@@ -1,12 +1,14 @@
-body{
-    text-align: center;
-
-    /*display: flex;
-    align-items: center;*/
-}
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    text-align: center;
+    
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
 }
 
 .stage{
