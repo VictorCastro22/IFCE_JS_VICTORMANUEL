@@ -19,11 +19,20 @@ function click (event) {
         }, 10);
 
     }; //Passo a posição para a outra função.
-    upSquares();
+    upSquare(postion);
 
 }
 
-function upSquares () { //Verificação, caso esteja o square vazio, ele bota o símbolo da vez do jogador.
+function upSquare(postion) {
+    
+    let square = document.getElementById(postion.toString());
+    let symbol = board[postion];
+    square.innerHTML = `<div class='${symbol}'></div>`
+
+}
+
+
+/*function upSquares () { //Verificação, caso esteja o square vazio, ele bota o símbolo da vez do jogador.
 
     let squares = document.querySelectorAll(".square"); //pegar elemento square
 
@@ -38,4 +47,4 @@ function upSquares () { //Verificação, caso esteja o square vazio, ele bota o 
 
     })
 
-}
+}*/
