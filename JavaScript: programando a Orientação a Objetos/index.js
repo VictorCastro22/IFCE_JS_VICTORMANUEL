@@ -8,17 +8,18 @@ class Cliente {
 class ContaCorrente{
 
     agencia;
-    saldo;
+    /*#saldo = 0; //Botando o atributo privado. */
+    _saldo = 0;
 
     sacar(valor){
-        if(this.saldo <= valor){
-            this.saldo -= valor;
+        if(this._saldo <= valor){
+            this._saldo -= valor;
         }
     }
 
     depositar(valor){
-        if(this.saldo > 0){
-            this.saldo += valor;
+        if(valor > 0){ //Evitando depositos de valores negativos.
+            this._saldo += valor;
         }
     }
 
@@ -28,11 +29,13 @@ const cliente1 = new Cliente;
 cliente1.nome = "Ricardo";
 cliente1.cpf = 0123456701;
 
+
 const contaCorrenteRicardo = new ContaCorrente();
 contaCorrenteRicardo.agencia = 1001;
-contaCorrenteRicardo.saldo = 1;
 
 
-console.log(contaCorrenteRicardo.saldo);
-contaCorrenteRicardo.depositar(50);
-console.log(contaCorrenteRicardo.saldo);
+console.log(contaCorrenteRicardo._saldo);
+contaCorrenteRicardo.depositar(100);
+contaCorrenteRicardo.depositar(200);
+contaCorrenteRicardo.depositar(-1);
+console.log(contaCorrenteRicardo._saldo);
