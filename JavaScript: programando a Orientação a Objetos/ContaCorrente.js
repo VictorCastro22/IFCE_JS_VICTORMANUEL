@@ -1,7 +1,7 @@
 import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente{
-
+    static numeroDeContas = 0;
     agencia;
     /*#saldo = 0; //Botando o atributo privado. */
     _saldo = 0; //Mostrandoao usuário que o campo é privado.
@@ -22,9 +22,10 @@ export class ContaCorrente{
         return this._cliente;
     }
 
-    constructor(cliente,agencia){
+    constructor(agencia, cliente){
         this.agencia = agencia;
         this._cliente = cliente;
+        ContaCorrente.numeroDeContas += 1;
     }
 
 
