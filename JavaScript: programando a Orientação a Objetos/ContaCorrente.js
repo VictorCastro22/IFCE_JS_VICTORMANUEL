@@ -9,7 +9,7 @@ export class ContaCorrente{
     get saldo() {
         return this._saldo;
     }
-    
+
     _cliente;
 
     set cliente(novoValor) { //Atribuição
@@ -21,6 +21,12 @@ export class ContaCorrente{
     get cliente() { //Retorna
         return this._cliente;
     }
+
+    constructor(cliente,agencia){
+        this.agencia = agencia;
+        this._cliente = cliente;
+    }
+
 
     sacar(valor) {
         if (this._saldo >= valor) {
