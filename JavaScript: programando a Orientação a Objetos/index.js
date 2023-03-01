@@ -9,20 +9,23 @@ class ContaCorrente{
 
     agencia;
     /*#saldo = 0; //Botando o atributo privado. */
-    _saldo = 0;
+    _saldo = 0; //Mostrandoao usuário que o campo é privado.
 
-    sacar(valor){
-        if(this._saldo <= valor){
+    sacar(valor) {
+        if (this._saldo >= valor) {
             this._saldo -= valor;
+            return valor;
+
         }
+        return
     }
 
-    depositar(valor){
-        if(valor > 0){ //Evitando depositos de valores negativos.
-            this._saldo += valor;
+    depositar(valor) {
+        if(valor <= 0) {
+            return;
         }
+        this._saldo += valor;
     }
-
 }
 
 const cliente1 = new Cliente;
