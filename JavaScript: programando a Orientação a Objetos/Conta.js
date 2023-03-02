@@ -1,14 +1,15 @@
 import { Cliente } from "./Cliente.js";
-
+//Clase abstrata > só funciona para ser herdada.
 export class Conta {
     constructor (saldoinicial, cliente, agencia){
+        if(this.constructor == Conta){ //Bloqueando para que a classe Conta não seja usada diretamente.
+            throw new Error("Você não deveria instanciar um objeto do tipo conta");
+        }
+
         this._saldo = saldoinicial;
         this.cliente = cliente;
         this.agencia = agencia;
-        
-        if(this.constructor == Conta){
-            console.log("Você não deveria instanciar um objeto do tipo conta");
-        }
+     
     }
 
     set cliente(novoValor) { //Atribuição
