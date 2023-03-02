@@ -4,7 +4,7 @@ export class ContaCorrente{
     static numeroDeContas = 0;
     agencia;
     /*#saldo = 0; //Botando o atributo privado. */
-    _saldo = 0; //Mostrandoao usuário que o campo é privado.
+    //_saldo = 0; //Mostrandoao usuário que o campo é privado.
 
     get saldo() {
         return this._saldo;
@@ -25,6 +25,7 @@ export class ContaCorrente{
     constructor(agencia, cliente){
         this.agencia = agencia;
         this._cliente = cliente;
+        this._saldo = 0;
         ContaCorrente.numeroDeContas += 1;
     }
 
