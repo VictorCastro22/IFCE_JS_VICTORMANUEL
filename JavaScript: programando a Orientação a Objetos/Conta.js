@@ -12,13 +12,13 @@ export class Conta {
      
     }
 
-    set cliente(novoValor) { //Atribuição
+    set cliente(novoValor) { //Set > Atribuição
         if (novoValor instanceof Cliente) {
             this._cliente = novoValor;
         }
     }
 
-    get cliente() { //Retorna
+    get cliente() { //Get > Retorna
         return this._cliente;
     }
 
@@ -26,9 +26,9 @@ export class Conta {
         return this._saldo;
     }
 
+    //Método abstrato.
     sacar(valor) {
-        let taxa = 1;
-        return this._sacar(valor, taxa);
+        throw new Error("O método sacar da conta é abstrato");
     }
 
     _sacar(valor, taxa){
