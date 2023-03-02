@@ -5,6 +5,10 @@ export class Conta {
         this._saldo = saldoinicial;
         this.cliente = cliente;
         this.agencia = agencia;
+        
+        if(this.constructor == Conta){
+            console.log("Você não deveria instanciar um objeto do tipo conta");
+        }
     }
 
     set cliente(novoValor) { //Atribuição
@@ -34,7 +38,7 @@ export class Conta {
 
         }
         return 0;
-        
+
     }
 
     depositar(valor) {
