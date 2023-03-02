@@ -1,24 +1,22 @@
-import { Cliente } from "../Cliente.js";
-//Clase abstrata > só funciona para ser herdada.
+//Classe abstrata 
 export class Conta {
-    constructor (saldoinicial, cliente, agencia){
+    constructor(saldoInicial, cliente, agencia) {
         if(this.constructor == Conta){ //Bloqueando para que a classe Conta não seja usada diretamente.
-            throw new Error("Você não deveria instanciar um objeto do tipo conta");
+            throw new Error("Você não deveria instanciar um objeto do tipo Conta Diretamente, pois essa é uma classe abstata");
         }
 
-        this._saldo = saldoinicial;
-        this.cliente = cliente;
-        this.agencia = agencia;
-     
+        this._saldo = saldoInicial;
+        this._cliente = cliente;
+        this._agencia = agencia;
     }
 
-    set cliente(novoValor) { //Set > Atribuição
+    set cliente(novoValor) { //Set > Atribuição.
         if (novoValor instanceof Cliente) {
             this._cliente = novoValor;
         }
     }
 
-    get cliente() { //Get > Retorna
+    get cliente() { //Get > Retorna.
         return this._cliente;
     }
 
@@ -26,9 +24,9 @@ export class Conta {
         return this._saldo;
     }
 
-    //Método abstrato.
+    //Método abstrato
     sacar(valor) {
-        throw new Error("O método sacar da conta é abstrato");
+       throw new Error("O método Sacar da conta é abstrato")
     }
 
     _sacar(valor, taxa){
@@ -36,22 +34,17 @@ export class Conta {
         if (this._saldo >= valorSacado) {
             this._saldo -= valorSacado;
             return valorSacado;
-
         }
-        return 0;
 
+        return 0;
     }
 
     depositar(valor) {
-        if(valor <= 0) {
-            return;
-        }
         this._saldo += valor;
     }
 
-    transferir (valor, conta) {
+    tranferir(valor, conta) {
         const valorSacado = this.sacar(valor);
         conta.depositar(valorSacado);
-    
     }
 }
