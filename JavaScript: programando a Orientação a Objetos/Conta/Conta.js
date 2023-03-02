@@ -1,4 +1,4 @@
-import { Cliente } from "./Cliente.js";
+import { Cliente } from "../Cliente.js";
 //Clase abstrata > só funciona para ser herdada.
 export class Conta {
     constructor (saldoinicial, cliente, agencia){

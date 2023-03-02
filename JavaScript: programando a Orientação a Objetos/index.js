@@ -8,10 +8,10 @@ ignorando o método sobrescrito na própria classe que retorna uma exceção.
 - Static Podemos definir em uma classe métodos estáticos que podem ser executados sem que a mesma tenha sido instanciada. 
 Geralmente este recurso é utilizado para criar funções de utilidades.*/
 
-import { Cliente } from "./Cliente.js";
-import { ContaCorrente } from "./ContaCorrente.js";
-import { ContaPoupança } from "./ContaPoupança.js";
-import { Conta } from "./Conta.js";
+import { Cliente } from "./Conta/Cliente.js";
+import { ContaCorrente } from "./Conta/ContaCorrente.js";
+import { ContaPoupança } from "./Conta/ContaPoupança.js";
+import { Conta } from "./Conta/Conta.js";
 
 const cliente1 = new Cliente("Ricardo", 11122233309); //Construtor permite fazer atribuição assim.
 
