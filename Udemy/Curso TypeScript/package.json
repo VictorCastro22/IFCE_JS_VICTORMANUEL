@@ -1,0 +1,20 @@
+{
+  "name": "ifce_js_victormanuel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorCastro22/IFCE_JS_VICTORMANUEL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorCastro22/IFCE_JS_VICTORMANUEL/issues"
+  },
+  "homepage": "https://github.com/VictorCastro22/IFCE_JS_VICTORMANUEL#readme"
+}
